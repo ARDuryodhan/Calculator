@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body class="container-fluid">
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="calculator">
+            <form action="calculate">
+                <div class="display">
+                    <input type="text" name="display" class="result "/>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="delClick()" id="btn">
+                    <input type="button" value="DE" onclick="clearClick()" id="btn">
+                    <input type="button" value="." onclick="insertClick('.')" id="btn">
+                    <input type="button" value="/" onclick="insertClick('/')" id="btn">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="insertClick(7)">
+                    <input type="button" value="8" onclick="insertClick(8)">
+                    <input type="button" value="9" onclick="insertClick(9)">
+                    <input type="button" value="*" onclick="insertClick('*')" id="btn">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="insertClick(4)">
+                    <input type="button" value="5" onclick="insertClick(5)">
+                    <input type="button" value="6" onclick="insertClick(6)">
+                    <input type="button" value="-" onclick="insertClick('-')" id="btn">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="insertClick(1)">
+                    <input type="button" value="2" onclick="insertClick(2)">
+                    <input type="button" value="3" onclick="insertClick(3)">
+                    <input type="button" value="+" onclick="insertClick('+')" id="btn">
+                </div>
+                <div> 
+                    <input type="button" value="00" onclick="insertClick('00')">
+                    <input type="button" value="0" onclick="insertClick(0)">
+                    <input type="button" value="=" onclick="equalClick()"  class="equal">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
